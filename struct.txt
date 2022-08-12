@@ -1,0 +1,43 @@
+
+class Menu: {
+    HashMap: dishes, price
+    HashMap: drinks, price
+}
+
+class Device {
+    String _name;
+    String _IDStaff;
+}
+
+class Table:{
+    int Type, //1,2,3
+    int price; //Quality 
+    bool: isEmpty 
+    ArrayList<int> _orderedDishes;
+    ArrayList<int> _orderedDrinks;
+`   int TotalPrice();
+
+}
+
+class PriceTable{
+    int price(int type){
+        ....
+
+    }
+}
+
+class Staff{
+    String _name;
+    String _id;
+}
+class Chef{
+    String _name;
+    String _id;
+}
+
+class Restaurant{
+    ArrayList<Table>
+    ArratList<Chef>
+    ArrayList<Staff>
+    ArrayList<Menu>
+}
