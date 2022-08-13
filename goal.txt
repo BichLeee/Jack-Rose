@@ -1,10 +1,3 @@
-Ứng dụng quản lí nhà hàng: 
-
-- Chức năng: 
-	+ Kiểm soát doanh thu cửa hàng ( CASHIER ) 
-	+ 
-
-
 + Máy chủ : 
 	- XEM doanh thu của ngày, tháng, năm.
 	- Tổng nguyên vật liệu trong tháng.(nhập vào nguyên liệu, số lượng, đơn giá)-> tổng
@@ -19,3 +12,8 @@
 	- Push món ăn + bàn (Queue)
 	- Pop ngay khi trang trí món ăn --> chuyển đến máy chủ 
 	
+
+
+https://www.onlinegdb.com/49w7xJ_kH
+https://www.onlinegdb.com/abMk2t27x
+https://www.w3schools.com/java/java_arraylist.asp
