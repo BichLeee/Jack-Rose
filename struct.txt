@@ -10,13 +10,13 @@ class Device {
 }
 
 class Table:{
-    int Type, //1,2,3
+    int id;
+    int Type, //1,2,3: thường, cao cấp....
     int price; //Quality 
     bool: isEmpty 
     ArrayList<int> _orderedDishes;
     ArrayList<int> _orderedDrinks;
 `   int TotalPrice();
-
 }
 
 class PriceTable{
@@ -30,6 +30,7 @@ class Staff{
     String _name;
     String _id;
 }
+
 class Chef{
     String _name;
     String _id;
@@ -40,10 +41,3 @@ class Restaurant{
     ArratList<Chef>
     ArrayList<Staff>
     ArrayList<Menu>
-}
- //llllllllllllll
-
-
- ......
-
- ////
