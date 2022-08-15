@@ -1,0 +1,19 @@
++ Máy chủ : 
+	- XEM doanh thu của ngày, tháng, năm.
+	- Tổng nguyên vật liệu trong tháng.(nhập vào nguyên liệu, số lượng, đơn giá)-> tổng
+	- chấm công.(danh sách nhân viên, số công)-> tổng công
+	-> Lợi nhuận đạt được(thu - chi) 
++ máy nhân viên: 
+	- Menu (cộng số lượng)
+	- tính giá tiền 
+	- Số hiệu bàn 
+
++ máy bếp: 
+	- Push món ăn + bàn (Queue)
+	- Pop ngay khi trang trí món ăn --> chuyển đến máy chủ 
+	
+
+
+https://www.onlinegdb.com/49w7xJ_kH
+https://www.onlinegdb.com/abMk2t27x
+https://www.w3schools.com/java/java_arraylist.asp
