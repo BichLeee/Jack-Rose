@@ -10,10 +10,12 @@ public class Menu {
 
     private Menu() {
         // khoi tao mon an
-        _foods.put(1, new Dish("Bun dau mam tom", 50));
+        _foods.put(1, new Dish("Bun dau mam tom", 100));
+        _foods.put(2, new Dish("Banh canh ca loc", 70));
 
         // khoi tao do uong
-        _drinks.put(2, new Dish("Sua tuoi tran chau duong den", 20));
+        _drinks.put(1, new Dish("Sua tuoi tran chau duong den", 50));
+        _drinks.put(2, new Dish("Hong tra milkfoam", 40));
     }
 
     public void printMenu() {
@@ -22,15 +24,18 @@ public class Menu {
 
         for (int i : _foods.keySet()) {
             _dish = _foods.get(i);
-            System.out.println(i + " - " + _dish.getName() + " - " + _dish.getPrice());
+            System.out.println(i + " - " + _dish.getName() + " - " + _dish.getPrice() + ".000 vnd");
         }
 
+        System.out.println("");
         System.out.println("---DRINKS---\n");
 
         for (int i : _drinks.keySet()) {
             _dish = _drinks.get(i);
-            System.out.println(i + " - " + _dish.getName() + " - " + _dish.getPrice());
+            System.out.println(i + " - " + _dish.getName() + " - " + _dish.getPrice() + ".000 vnd");
         }
+
+        System.out.println("");
     }
 
     public static Menu getInstance() {
@@ -39,5 +44,4 @@ public class Menu {
         }
         return _instance;
     }
-
 }
