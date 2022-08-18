@@ -13,21 +13,49 @@ public class Client {
         out = new PrintWriter(clientSocket.getOutputStream(), true);
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-        String inputLine = sendMessage("KN nhu cc");
+        // String inputLine = sendMessage("KN nhu cc");
+        // Scanner sc = new Scanner(System.in);
+        // String mess = "";
+        // while (true) {
+        // if ("end".equals(mess)) {
+        // //out.println("good bye");
+        // System.out.println("good bye");
+        // sc.close();
+        // break;
+        // } else {
+        // // System.out.println("jjServer: "+inputLine);
+        // // System.out.print("Me: ");
+        // System.out.print("Me: ");
+        // mess = sc.nextLine();
+        // inputLine = sendMessage(mess);
+        // }
+        // // out.println(inputLine);
+        // }
+
+        // order
+        ArrayList<Integer> orderedDish = new ArrayList<Integer>();
+        String opt = "a";
         Scanner sc = new Scanner(System.in);
-        String mess = "";
+
         while (true) {
-            if ("end".equals(mess)) {
-                out.println("good bye");
-                break;
-            } else {
-                // System.out.println("jjServer: "+inputLine);
-                // System.out.print("Me: ");
-                System.out.print("Me: ");
-                mess = sc.nextLine();
-                inputLine = sendMessage(mess);
+            System.out.println("---------------------------------------\n");
+            Menu.getInstance().printMenu();
+            // ArrayList<Integer> orderedDish = Menu.getInstance().order();
+
+            System.out.println("Your option: ");
+            opt = sc.nextLine();
+            while (opt.equals("end") == false) {
+                orderedDish.add(Integer.parseInt(opt));
+                opt = sc.nextLine();
             }
-            // out.println(inputLine);
+
+            out.println(orderedDish.size());
+            for (Integer i : orderedDish) {
+                out.println(i);
+                System.out.println(i);
+            }
+            orderedDish.clear();
+            // sc.close();
         }
     }
 

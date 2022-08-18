@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Menu {
     // <id,price>
@@ -14,8 +16,8 @@ public class Menu {
         _foods.put(2, new Dish("Banh canh ca loc", 70));
 
         // khoi tao do uong
-        _drinks.put(1, new Dish("Sua tuoi tran chau duong den", 50));
-        _drinks.put(2, new Dish("Hong tra milkfoam", 40));
+        _drinks.put(3, new Dish("Sua tuoi tran chau duong den", 50));
+        _drinks.put(4, new Dish("Hong tra milkfoam", 40));
     }
 
     public void printMenu() {
@@ -44,4 +46,19 @@ public class Menu {
         }
         return _instance;
     }
+
+    public ArrayList<Integer> order() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Your option: ");
+        String opt = "a";
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        opt = sc.nextLine();
+        while (opt.equals("end") == false) {
+            arr.add(Integer.parseInt(opt));
+            opt = sc.nextLine();
+        }
+        sc.close();
+        return arr;
+    }
+
 }
